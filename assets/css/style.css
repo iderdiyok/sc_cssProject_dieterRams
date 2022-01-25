@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: unset;
+    color: #333;
+}
+/* main */
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text{
+    padding-top: 2em;
+}
+.text a{
+    font-size: .9rem;
+    font-weight: 600;
+    padding-left: 8%;
+}
+.text h1{
+    margin-top: 20%;
+    padding-left: 10%;
+    font-size: 2em;
+}
+.text p{
+    width: 27vw;
+    margin-top: 3em;
+    padding-left: 10%;
+    color: #666;
+    line-height: 2;
+}
+.pageNumber{
+    display: flex;
+    padding: 1em 2em;
+    align-items:baseline;
+    background-color: #F5F5F5;
+}
+.pageNumber h2{
+    font-size: 1.5em;
+}
+.pageNumber p{
+    font-size: .8em;
+    font-weight: 600;
+    color: #666;
+}
+.image{
+    background: url(../img/radio.jpeg) no-repeat center/cover;
+    height: 90vh;
+}
+
+/* footer */
+.controls{
+    background-color: #F5F5F5;
+    display: flex;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+.left .icons{
+    margin-left: 2em;
+}
+.icons a{
+    margin-right: .5em;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+span{
+    padding: .9em 1.2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+span:hover{
+    background-color: #333;
+    color: #fff;
+}
+.right .info{
+    text-align: right;
+    padding-right: 2em;
+}
+.right p{
+    font-size: .9em;
+    color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .text p{
+        width: 70vw;
+        margin: 7em 0;
+    }
+    .image{
+        height: 60vh;
+    }
+    .right .info{
+        text-align: left;
+        padding-right: 1em;
+    }
+    .info h3{
+        font-size: .9em;
+    }
+    .info p{
+        font-size: .7em;
+    }
+    span{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:980px){
+    .text h1 {
+        margin-top: 50%;
+    }
+    .text p {
+        width: 40vw;
+    }
+    .image {
+        background: url(../img/radio.jpeg) no-repeat center/150%;
+        height: 94vh;
+    }
+}
